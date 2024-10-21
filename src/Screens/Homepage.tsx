@@ -15,7 +15,7 @@ const Homepage: React.FC = () => {
               <img src={logo} alt="logo" className=".col-md-8" />
             </div>
           </div>
-          <div className=" manrope md:text-6xl  sm:text-4xl  text-white text-2xl font-medium flex justify-center items-center flex-grow">
+          <div className=" manrope lg:text-6xl  sm:text-4xl  text-white text-2xl font-medium flex justify-center items-center flex-grow">
             COMING SOON!
           </div>
           <div className="flex justify-center  items-center space-x-12 lg:space-x-32 h-12 home-footer">
