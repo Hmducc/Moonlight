@@ -9,16 +9,16 @@ const Homepage: React.FC = () => {
   return (
     <div className="home-bg overlay bg-scroll">
       <div className="flex justify-center">
-        <div className=" home-item lg:w-1280  h-screen flex flex-col">
+        <div className=" home-item lg:w-1280 md:w-765  h-screen flex flex-col">
           <div className="h-16 flex-shrink-0 home-nav md:h-20 ">
-            <div className="h-16  flex justify-center w-24 object-contain lg:h-24 lg:w-40 ">
+            <div className="h-16  flex justify-center w-24 object-contain md:h-20 md:w-28 lg:h-24 lg:w-40 ">
               <img src={logo} alt="logo" className=".col-md-8" />
             </div>
           </div>
           <div className=" manrope lg:text-6xl  sm:text-4xl  text-white text-2xl font-medium flex justify-center items-center flex-grow">
             COMING SOON!
           </div>
-          <div className="flex justify-center  items-center space-x-12 lg:space-x-32 h-12 home-footer">
+          <div className="flex justify-center  items-center space-x-12 lg:space-x-32 h-12 md:space-x-24 home-footer">
             <a href="https://www.facebook.com/@moonlightstudiovfx">
               <img src={fb} className="w-5 h-5 filter invert" alt="Facebook" />
             </a>
