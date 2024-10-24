@@ -10,6 +10,7 @@
   background-image: url(../assets/background2_fix.jpg);
 
   background-size: contain;
+  background-repeat: round;
 }
 .overlay {
   border-image: linear-gradient(
@@ -25,4 +26,41 @@
 }
 .home-nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.diamond-container {
+  position: relative;
+  overflow: hidden; /* Ensures the background stays contained */
+}
+
+.diamond-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../assets/diamond.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: 0; /* Ensures the background stays behind the text */
+}
+
+.diamond-container .z-10 {
+  position: relative;
+
+  z-index: 10; /* Keeps the text above the blurred background */
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+.contact-button {
+  border-radius: 32px;
+  font-size: 32px;
+}
+.home-brands {
+  z-index: 10;
 }

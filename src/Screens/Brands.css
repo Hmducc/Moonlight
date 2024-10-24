@@ -1,0 +1,149 @@
+@keyframes slideAnim {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.looper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.looper__innerList {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.looper__innerList[data-animate="true"] .looper__listInstance {
+  animation: slideAnim linear infinite;
+}
+
+.looper__listInstance {
+  display: flex;
+  width: max-content;
+
+  animation: none;
+}
+
+/* Example content styles */
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin: 10px;
+  padding: 16px;
+  font-weight: 600;
+
+  text-align: center;
+  border-radius: 16px;
+}
+.contentBlock--one {
+  width: 180px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.05);
+  font-weight: 600;
+  font-size: 18px;
+  background-image: url(../assets/vinamilk.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.5;
+}
+
+.contentBlock--one:hover {
+  opacity: 1; /* Fully visible (no fading) on hover */
+}
+
+.contentBlock--two {
+  width: 180px;
+  height: 70px;
+  background: #f15c30;
+  font-weight: 600;
+  font-size: 18px;
+  background-image: url(../assets/mirinda.png);
+  background-size: contain;
+  background-position: center;
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.5;
+}
+.contentBlock--two:hover {
+  opacity: 1; /* Fully visible (no fading) on hover */
+}
+.contentBlock--three {
+  width: 180px;
+  height: 70px;
+  background: #148f34;
+  font-weight: 600;
+  font-size: 18px;
+  background-image: url(../assets/milo.png);
+  background-size: contain;
+  background-position: center;
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.5;
+}
+.contentBlock--three:hover {
+  opacity: 1; /* Fully visible (no fading) on hover */
+}
+.contentBlock--four {
+  width: 180px;
+  height: 70px;
+  background: #000;
+  font-weight: 600;
+  font-size: 18px;
+  background-image: url(../assets/AOV.jpg);
+  background-size: contain;
+  background-position: center;
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.5;
+}
+.contentBlock--four:hover {
+  opacity: 1; /* Fully visible (no fading) on hover */
+}
+.contentBlock--five {
+  width: 180px;
+  height: 70px;
+  background: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  background-image: url(../assets/vnpay.png);
+  background-size: contain;
+  background-position: center;
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.5;
+}
+.contentBlock--five:hover {
+  opacity: 1; /* Fully visible (no fading) on hover */
+}
+.brands-text {
+  z-index: 20;
+}
+
+/* .contentBlock--one:last-of-type {
+  color: var(--green);
+  margin-right: 36px;
+}
+.contentBlock--two {
+  color: var(--green);
+  font-size: 48px;
+  background: rgba(255, 255, 255, 0.05);
+} */
