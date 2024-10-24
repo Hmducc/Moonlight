@@ -1,73 +1,110 @@
-import React, { useState } from "react";
-import logo from "../assets/moon_logo.png"; // Replace with the correct path to your logo
+"use client";
 
-const Navbar: React.FC = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
+import { useState } from "react";
+import { Dialog, DialogPanel } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-scroll";
+import logo from "../assets/moon_logo.png";
+
+const navigation = [
+  { name: "Product", to: "test123" },
+  { name: "Features", to: "features-section" },
+  { name: "Marketplace", to: "marketplace-section" },
+  { name: "Company", to: "company-section" },
+];
+
+export default function Example() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between bg-gray-800 p-4 md:p-6 lg:p-8">
-      {/* Logo Section */}
-      <div className="flex-shrink-0">
-        <img
-          src={logo}
-          alt="logo"
-          className="h-16 w-24 object-contain md:h-20 md:w-28 lg:h-24 lg:w-40"
-        />
-      </div>
-
-      {/* Desktop Button Section */}
-      <div className="hidden md:flex space-x-4 mx-auto">
-        <button className="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md">
-          Home
-        </button>
-        <button className="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md">
-          About
-        </button>
-        <button className="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md">
-          Services
-        </button>
-        <button className="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md">
-          Contact
-        </button>
-      </div>
-
-      {/* Mobile Menu Button */}
-      <div className="md:hidden">
-        <button
-          onClick={() => setMenuOpen(!isMenuOpen)}
-          className="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md"
+    <div className="bg-white">
+      <header className="absolute inset-x-0 top-0 z-50">
+        <nav
+          aria-label="Global"
+          className="flex items-center justify-between p-6 lg:px-8 mx-auto max-w-[1500px] text-white"
         >
-          Menu
-        </button>
-      </div>
-
-      {/* Mobile Slide-over Menu */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center md:hidden">
-          <div className="bg-white p-8 rounded-lg shadow-lg space-y-4">
+          <div className="flex lg:flex-1">
+            <a href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">Your Company</span>
+              <img
+                alt=""
+                src={logo}
+                className="h-8 w-20 object-cover lg:h-10 lg:w-40  "
+              />
+            </a>
+          </div>
+          <div className="flex lg:hidden">
             <button
-              onClick={() => setMenuOpen(false)}
-              className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"
+              type="button"
+              onClick={() => setMobileMenuOpen(true)}
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 "
             >
-              Close
-            </button>
-            <button className="block w-full px-4 py-2 text-blue-600 hover:bg-blue-100 rounded-md">
-              Home
-            </button>
-            <button className="block w-full px-4 py-2 text-blue-600 hover:bg-blue-100 rounded-md">
-              About
-            </button>
-            <button className="block w-full px-4 py-2 text-blue-600 hover:bg-blue-100 rounded-md">
-              Services
-            </button>
-            <button className="block w-full px-4 py-2 text-blue-600 hover:bg-blue-100 rounded-md">
-              Contact
+              <span className="sr-only">Open main menu</span>
+              <Bars3Icon aria-hidden="true" className="h-6 w-6" />
             </button>
           </div>
-        </div>
-      )}
-    </nav>
+          <div className="hidden lg:flex lg:gap-x-24">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.to}
+                smooth={true}
+                duration={500}
+                className="text-md  leading-6 manrope cursor-pointer"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
+        </nav>
+        <Dialog
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+          className="lg:hidden"
+        >
+          <div className="fixed inset-0 z-50" />
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div className="flex items-center justify-between">
+              <a href="#" className="-m-1.5 p-1.5">
+                <span className="sr-only">Your Company</span>
+                <img
+                  alt=""
+                  src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+                  className="h-8 w-auto"
+                />
+              </a>
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(false)}
+                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              >
+                <span className="sr-only">Close menu</span>
+                <XMarkIcon aria-hidden="true" className="h-6 w-6" />
+              </button>
+            </div>
+            <div className="mt-6 flow-root">
+              <div className="-my-6 divide-y divide-gray-500/10">
+                <div className="space-y-2 py-6">
+                  {navigation.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.to}
+                      smooth={true}
+                      duration={500}
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 cursor-pointer"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+                <div className="py-6"></div>
+              </div>
+            </div>
+          </DialogPanel>
+        </Dialog>
+      </header>
+    </div>
   );
-};
-
-export default Navbar;
+}

@@ -21,11 +21,12 @@
     fill 1;
 }
 .home-item {
-  max-width: 1280px;
+  max-width: 1600x;
   width: 358px;
 }
 .home-nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #0e091399;
 }
 .diamond-container {
   position: relative;

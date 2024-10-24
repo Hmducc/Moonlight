@@ -1,32 +1,21 @@
-import { Link } from "react-scroll";
 import fb from "../assets/facebook.svg";
 import ig from "../assets/instagram.svg";
-import logo from "../assets/moon.png";
 import phone from "../assets/telephone.svg";
 import vimeo from "../assets/vimeo.svg";
 import Brands from "./Brands";
 import "./Homepage.css";
-
+import Navbar from "./Navbar";
 const Homepage: React.FC = () => {
   return (
     <div className="home-bg overlay bg-scroll">
       <div className="flex flex-col items-center justify-center">
-        <div className=" home-item lg:w-1280 md:w-765  h-screen flex flex-col">
-          <div className="h-16 bg-blue-300 flex-shrink-0 flex flex-row home-nav md:h-20 ">
-            <div className="h-16  flex justify-center w-24 object-contain md:h-20 md:w-28 items-center bg-red-300 lg:h-24 lg:w-40 ">
-              <img src={logo} alt="logo" className=".col-md-8" />
-            </div>
-            <button>
-              <Link
-                to="test123"
-                smooth="true"
-                duration={700}
-                className="text-white"
-              >
-                123
-              </Link>
-            </button>
+        <div className="h-16 flex-shrink-0 flex items-center justify-center home-nav md:h-20 fixed top-0 left-0 right-0 z-50  ">
+          <div className="w-full max-w-[1500px]">
+            <Navbar />
           </div>
+        </div>
+
+        <div className=" home-item mt-16  lg:w-1500 md:w-765 items-center  h-screen flex flex-col">
           <div className="container diamond-container flex-grow relative ">
             <div className="top-section">
               <div className="left-half z-10 text-white flex justify-center items-center ">
@@ -55,9 +44,24 @@ const Homepage: React.FC = () => {
         </div>
         <div
           id="test123"
-          className="home-item bg-blue-300 lg:w-1280 md:w-765 mt-10 h-screen"
+          className="home-item bg-blue-300 lg:w-1500  md:w-765  "
         >
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-20 mb-20 h-500 bg-green-300">
+            <div className="text-white bg-red-300">52348972398457</div>
+          </div>
+        </div>
+        <div id="test" className="home-item bg-blue-300 lg:w-1500  md:w-765  ">
+          <div className="flex justify-center mt-20 mb-20 h-500 bg-green-300">
+            <div className="text-white bg-red-300">52348972398457</div>
+          </div>
+        </div>
+        <div id="test" className="home-item bg-blue-300 lg:w-1500  md:w-765  ">
+          <div className="flex justify-center mt-20 mb-20 h-500 bg-green-300">
+            <div className="text-white bg-red-300">52348972398457</div>
+          </div>
+        </div>
+        <div id="test" className="home-item bg-blue-300 lg:w-1500  md:w-765  ">
+          <div className="flex justify-center mt-20 mb-20 h-500 bg-green-300">
             <div className="text-white bg-red-300">52348972398457</div>
           </div>
         </div>
