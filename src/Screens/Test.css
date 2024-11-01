@@ -1,21 +1,17 @@
-.container {
+.card-row {
   display: flex;
-  flex-direction: column;
-  height: 669px; /* Adjust the height as needed */
-  width: 1280px; /* Adjust the width as needed */
+  justify-content: flex-start;
+  align-items: center;
 }
-
-.top-section {
-  display: flex;
-  height: 75%;
+.card-preview {
+  width: 100px;
+  background-color: aqua;
+  height: 100px;
+  border-radius: 100px;
 }
-
-.left-half,
-.right-half {
-  width: 50%;
-  height: 100%;
-}
-
-.bottom-section {
-  height: 25%;
+.card-content {
+  position: absolute;
+  border-left: 1px solid #000;
+  height: 50px;
+  margin-left: 86px;
 }

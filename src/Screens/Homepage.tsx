@@ -48,9 +48,9 @@ const Homepage: React.FC = () => {
             </div>
           </div>
         </div>
-
+        {/* ABOUT */}
         <div id="About" className="home-item   lg:w-[1500px] md:w-[765px]">
-          <div className="flex   justify-center mt-20 mb-20 h-[500px]">
+          <div className="flex  justify-center mt-20 mb-20 h-[500px]">
             {/* Container with Two Equal Columns */}
             <div className="flex w-full">
               {/* Left Column */}
@@ -317,10 +317,40 @@ const Homepage: React.FC = () => {
         </div>
         <div
           id="Customers"
-          className="home-item bg-red-300 lg:w-1500  md:w-765  "
+          className="home-item bg-red-300 lg:w-1500  md:w-765 lg:h-1500  "
         >
-          <div className="flex justify-center mt-20 mb-20 h-500 ">
-            <div className="text-white">52348972398457</div>
+          <div className="home-item   lg:w-[1500px] md:w-[765px]">
+            <div className="flex mt-20   text-5xl manrope text-white  justify-end mr-12">
+              Customers Priority
+            </div>
+            <div className="flex  justify-center mt-5  mb-20 h-[300px]">
+              {/* Container with Two Equal Columns */}
+              <div className="flex w-full">
+                {/* Left Column */}
+                <div className="flex-1 bg-blue-300  flex flex-wrap justify-center items-center  ">
+                  <div className="home-customers flex bg-yellow-300 h-[200px] w-[600px]">
+                    <div className="home-circle"></div>
+                    <div className="home-rectangle flex justify-center items-center text-white text-xl p-4">
+                      Arrange suitable quality personnel for jobs.
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Column */}
+                <div className="flex-1 flex flex-wrap bg-green-300 justify-center items-center  ">
+                  <div className="flex-1   flex flex-wrap justify-center items-center  ">
+                    <div className="home-customers flex bg-yellow-300 h-[200px] w-[600px]">
+                      <div className="home-circle"></div>
+                      <div className="home-rectangle flex justify-center items-center text-white text-xl p-4">
+                        Strengthen supplementary personnel - serving specialized
+                        quality job requirements (motion control, simulation,
+                        rotoscoping,...)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -79,3 +79,39 @@
 .home-software {
   border-bottom: 1px solid #d9d9d9;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 669px; /* Adjust the height as needed */
+  width: 1280px; /* Adjust the width as needed */
+}
+
+.top-section {
+  display: flex;
+  height: 75%;
+}
+
+.left-half,
+.right-half {
+  width: 50%;
+  height: 100%;
+}
+
+.bottom-section {
+  height: 25%;
+}
+.home-circle {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 200px;
+}
+.home-rectangle {
+  position: absolute;
+  margin-left: 160px;
+  border-left: 1px solid #000;
+  border-radius: 20px;
+  height: 200px;
+  width: 350px;
+  background-color: antiquewhite;
+}
