@@ -103,15 +103,51 @@
 .home-circle {
   width: 200px;
   height: 200px;
-  background-color: aqua;
+  background-color: #543880;
   border-radius: 200px;
 }
 .home-rectangle {
   position: absolute;
   margin-left: 160px;
-  border-left: 1px solid #000;
+  border-left: 1px solid white;
   border-radius: 20px;
   height: 200px;
   width: 350px;
-  background-color: antiquewhite;
+  background-color: #201236;
+}
+.home-circle-star {
+  width: 200px;
+  height: 200px;
+  background-color: #f2d190;
+  border-radius: 200px;
+}
+body {
+  background: #eee;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

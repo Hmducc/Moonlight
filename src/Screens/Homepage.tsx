@@ -8,9 +8,20 @@ import ig from "../assets/instagram.svg";
 import phone from "../assets/telephone.svg";
 import Unreal from "../assets/Unreal.png";
 import vimeo from "../assets/vimeo.svg";
+import plus from "../assets/plus.svg";
 import Brands from "./Brands";
 import "./Homepage.css";
+import golden from "../assets/golden.svg";
+import chat from "../assets/chat.svg";
+import handshake from "../assets/handshake.svg";
 import Navbar from "./Navbar";
+import man from "../assets/3man.svg";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/scrollbar";
+import { Scrollbar } from "swiper/modules";
+
 const Homepage: React.FC = () => {
   return (
     <div className="home-bg overlay bg-scroll">
@@ -317,19 +328,24 @@ const Homepage: React.FC = () => {
         </div>
         <div
           id="Customers"
-          className="home-item bg-red-300 lg:w-1500  md:w-765 lg:h-1500  "
+          className="home-item bg-blue-300 lg:w-1500  md:w-765 lg:h-[1020px]  "
         >
-          <div className="home-item   lg:w-[1500px] md:w-[765px]">
+          <div className="home-item bg-red-300   lg:w-[1500px] md:w-[765px]">
             <div className="flex mt-20   text-5xl manrope text-white  justify-end mr-12">
               Customers Priority
             </div>
-            <div className="flex  justify-center mt-5  mb-20 h-[300px]">
+            <div className="flex  justify-center mt-5   h-[250px]">
               {/* Container with Two Equal Columns */}
               <div className="flex w-full">
                 {/* Left Column */}
-                <div className="flex-1 bg-blue-300  flex flex-wrap justify-center items-center  ">
-                  <div className="home-customers flex bg-yellow-300 h-[200px] w-[600px]">
-                    <div className="home-circle"></div>
+                <div className="flex-1   flex flex-wrap justify-center items-center  ">
+                  <div className="home-customers flex   h-[200px] w-[510px]">
+                    <div className="home-circle flex justify-center items-center">
+                      <img
+                        className="lg:h-[100px] stroke-white object-contain"
+                        src={plus}
+                      ></img>
+                    </div>
                     <div className="home-rectangle flex justify-center items-center text-white text-xl p-4">
                       Arrange suitable quality personnel for jobs.
                     </div>
@@ -337,14 +353,66 @@ const Homepage: React.FC = () => {
                 </div>
 
                 {/* Right Column */}
-                <div className="flex-1 flex flex-wrap bg-green-300 justify-center items-center  ">
+                <div className="flex-1 flex flex-wrap  justify-center items-center  ">
                   <div className="flex-1   flex flex-wrap justify-center items-center  ">
-                    <div className="home-customers flex bg-yellow-300 h-[200px] w-[600px]">
-                      <div className="home-circle"></div>
+                    <div className="home-customers flex  h-[200px] w-[510px]">
+                      <div className="home-circle flex justify-center items-center">
+                        <img src={man} className="lg:h-[80px]"></img>
+                      </div>
                       <div className="home-rectangle flex justify-center items-center text-white text-xl p-4">
                         Strengthen supplementary personnel - serving specialized
                         quality job requirements (motion control, simulation,
-                        rotoscoping,...)
+                        roto scoping,...)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className=" lg:h-[270px] flex justify-center items-center">
+              <div className="flex-1   flex flex-wrap justify-center items-center  ">
+                <div className="home-customers flex  h-[200px] w-[510px]">
+                  <div className="home-circle-star flex justify-center items-center">
+                    <img src={golden} className="lg:h-[100px]"></img>
+                  </div>
+                  <div className="home-rectangle flex justify-center items-center text-white text-xl p-4">
+                    Priority is given to serving jobs requirement ASAP.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex  justify-center    h-[250px]">
+              {/* Container with Two Equal Columns */}
+              <div className="flex w-full">
+                {/* Left Column */}
+                <div className="flex-1   flex flex-wrap justify-center items-center  ">
+                  <div className="home-customers flex   h-[200px] w-[510px]">
+                    <div className="home-circle flex justify-center items-center">
+                      <img
+                        className="lg:h-[110px] stroke-white object-contain"
+                        src={chat}
+                      ></img>
+                    </div>
+                    <div className="home-rectangle flex justify-center items-center text-white text-xl p-4">
+                      Support the implementation of Animatics for Production
+                      House pitching (last-round), or support Animation demo for
+                      the pre-production phase.
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Column */}
+                <div className="flex-1 flex flex-wrap  justify-center items-center  ">
+                  <div className="flex-1   flex flex-wrap justify-center items-center  ">
+                    <div className="home-customers flex  h-[200px] w-[510px]">
+                      <div className="home-circle flex justify-center items-center">
+                        <img src={handshake} className="lg:h-[110px]"></img>
+                      </div>
+                      <div className="home-rectangle flex justify-center items-center text-white text-xl p-4">
+                        Both parties are responsible for securing Priority
+                        information together, and commit that the content of the
+                        collaboration will not be disclosed to any third party
+                        in any form
                       </div>
                     </div>
                   </div>
@@ -352,6 +420,54 @@ const Homepage: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="home-item bg-blue-300 lg:w-1500  md:w-765 lg:h-[500px]  ">
+          <Swiper
+            scrollbar={{
+              hide: true,
+            }}
+            modules={[Scrollbar]}
+            className="mySwiper h-[350px]"
+          >
+            <SwiperSlide>
+              <div className="flex justify-center gap-8 p-8 mt-6  ">
+                {/* GIF Box 1 */}
+                <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg  ">
+                  <img
+                    src={mono}
+                    alt="Gif 1"
+                    className="object-cover gif-box w-full h-full"
+                  />
+                </div>
+
+                {/* GIF Box 2 */}
+                <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg ">
+                  <img
+                    src={afc}
+                    alt="Gif 2"
+                    className="object-cover gif-box w-full h-full"
+                  />
+                </div>
+
+                {/* GIF Box 3 */}
+                <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg ">
+                  <img
+                    src={tuborg2}
+                    alt="Gif 3"
+                    className="object-cover gif-box w-full h-full"
+                  />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>Slide 2</SwiperSlide>
+            <SwiperSlide>Slide 3</SwiperSlide>
+            <SwiperSlide>Slide 4</SwiperSlide>
+            <SwiperSlide>Slide 5</SwiperSlide>
+            <SwiperSlide>Slide 6</SwiperSlide>
+            <SwiperSlide>Slide 7</SwiperSlide>
+            <SwiperSlide>Slide 8</SwiperSlide>
+            <SwiperSlide>Slide 9</SwiperSlide>
+          </Swiper>
         </div>
       </div>
       <div className="flex justify-center  items-center space-x-12 lg:space-x-32 h-12 md:space-x-24 home-footer">
