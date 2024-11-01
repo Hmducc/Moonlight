@@ -65,3 +65,17 @@
 .home-brands {
   z-index: 10;
 }
+.intro-box {
+  border-radius: 40px;
+}
+.gif-box {
+  border: 1px solid #d1d5db;
+  border-radius: 40px;
+}
+.details-box {
+  border-left: 1px solid #d1d5db;
+  border-radius: 40px;
+}
+.home-software {
+  border-bottom: 1px solid #d9d9d9;
+}

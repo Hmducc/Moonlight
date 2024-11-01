@@ -1,16 +1,16 @@
 "use client";
 
-import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useState } from "react";
 import { Link } from "react-scroll";
 import logo from "../assets/moon_logo.png";
 
 const navigation = [
-  { name: "Product", to: "test123" },
-  { name: "Features", to: "features-section" },
-  { name: "Marketplace", to: "marketplace-section" },
-  { name: "Company", to: "company-section" },
+  { name: "About", to: "About" },
+  { name: "Services", to: "Services" },
+  { name: "Software", to: "Software" },
+  { name: "Customers", to: "Customers" },
 ];
 
 export default function Example() {
