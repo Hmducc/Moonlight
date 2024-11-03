@@ -49,8 +49,6 @@ body {
   border-radius: 16px;
 }
 .contentBlock--one {
-  width: 180px;
-  height: 70px;
   background: rgba(255, 255, 255, 0.05);
   font-weight: 600;
   font-size: 18px;
@@ -67,8 +65,6 @@ body {
 }
 
 .contentBlock--two {
-  width: 180px;
-  height: 70px;
   background: #f15c30;
   font-weight: 600;
   font-size: 18px;
@@ -84,8 +80,6 @@ body {
   opacity: 1; /* Fully visible (no fading) on hover */
 }
 .contentBlock--three {
-  width: 180px;
-  height: 70px;
   background: #148f34;
   font-weight: 600;
   font-size: 18px;
@@ -101,8 +95,6 @@ body {
   opacity: 1; /* Fully visible (no fading) on hover */
 }
 .contentBlock--four {
-  width: 180px;
-  height: 70px;
   background: #000;
   font-weight: 600;
   font-size: 18px;
@@ -118,8 +110,6 @@ body {
   opacity: 1; /* Fully visible (no fading) on hover */
 }
 .contentBlock--five {
-  width: 180px;
-  height: 70px;
   background: #fff;
   font-weight: 600;
   font-size: 18px;

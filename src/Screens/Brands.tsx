@@ -86,11 +86,11 @@ const Brands = () => (
       Making TVC Videos for Companies, Corporations
     </div>
     <InfiniteLooper speed={25} direction="right">
-      <div className="contentBlock contentBlock--one"></div>
-      <div className="contentBlock contentBlock--two"></div>
-      <div className="contentBlock contentBlock--three"></div>
-      <div className="contentBlock contentBlock--four"></div>
-      <div className="contentBlock contentBlock--five"></div>
+      <div className="contentBlock contentBlock--one lg:w-[180px] lg:h-[70px] w-[110px] h-[50px]"></div>
+      <div className="contentBlock contentBlock--two lg:w-[180px] lg:h-[70px] w-[110px] h-[50px]"></div>
+      <div className="contentBlock contentBlock--three lg:w-[180px] lg:h-[70px] w-[110px] h-[50px]"></div>
+      <div className="contentBlock contentBlock--four lg:w-[180px] lg:h-[70px] w-[110px] h-[50px]"></div>
+      <div className="contentBlock contentBlock--five lg:w-[180px] lg:h-[70px] w-[110px] h-[50px]"></div>
     </InfiniteLooper>
   </div>
 );

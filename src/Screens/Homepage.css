@@ -21,7 +21,7 @@
     fill 1;
 }
 .home-item {
-  max-width: 1600x;
+  max-width: 1600px;
   width: 358px;
 }
 .home-nav {
@@ -52,6 +52,7 @@
 
   z-index: 10; /* Keeps the text above the blurred background */
 }
+
 .column {
   float: left;
   width: 50%;
@@ -101,23 +102,16 @@
   height: 25%;
 }
 .home-circle {
-  width: 200px;
-  height: 200px;
   background-color: #543880;
   border-radius: 200px;
 }
 .home-rectangle {
-  position: absolute;
-  margin-left: 160px;
   border-left: 1px solid white;
   border-radius: 20px;
-  height: 200px;
-  width: 350px;
+
   background-color: #201236;
 }
 .home-circle-star {
-  width: 200px;
-  height: 200px;
   background-color: #f2d190;
   border-radius: 200px;
 }
@@ -137,9 +131,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
 
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,4 +142,13 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.mySwiper .swiper-scrollbar {
+  background-color: #ccc; /* Background color of the scrollbar track */
+  height: 8px; /* Adjust the height of the scrollbar */
+}
+
+.mySwiper .swiper-scrollbar-drag {
+  background-color: #8043e0; /* Color of the draggable scrollbar thumb */
+  border-radius: 4px; /* Round corners of the scrollbar thumb */
 }

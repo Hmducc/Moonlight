@@ -21,7 +21,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper/modules";
-
+import cvit from "../assets/GIF/cvit.gif";
+import fco from "../assets/GIF/fco3.gif";
+import grab from "../assets/GIF/Grab-color.gif";
+import haohao from "../assets/GIF/Haohao-color.gif";
+import ht2 from "../assets/GIF/ht2.gif";
+import klook from "../assets/GIF/Klook-color.gif";
+import ngocdung from "../assets/GIF/ngocdung.gif";
+import pho from "../assets/GIF/pho2.gif";
+import xiaomi from "../assets/GIF/xiaomi.gif";
 const Homepage: React.FC = () => {
   return (
     <div className="home-bg overlay bg-scroll">
@@ -32,23 +40,25 @@ const Homepage: React.FC = () => {
           </div>
         </div>
 
-        <div className=" home-item mt-16   lg:w-1500 md:w-765 items-center  h-screen flex flex-col">
-          <div className="container  diamond-container flex-grow relative ">
-            <div className="top-section ">
-              <div className="left-half z-10 text-white flex justify-center items-center ">
+        <div className=" w-full  mt-16   items-center  h-screen flex flex-col ">
+          <div className="container  diamond-container  flex-grow relative  ">
+            <div className="md:flex flex-col  md:flex-row w-full lg:h-3/4 h-[1000px]  ">
+              <div className="flex-1 flex-wrap  h-[380px]   lg:h-full z-10 text-white lg:flex lg:justify-center lg:items-center ">
                 <div className="   mt-10 h-482 w-482">
-                  <p className="text-70  ">Who are we?</p>
-                  <p className="text-80 font-bold">
+                  <p className="lg:text-70  ml-3 lg:ml-0 text-[50px] manrope  ">
+                    Who are we?
+                  </p>
+                  <p className="lg:text-80 font-bold  ml-3 lg:ml-0 text-[60px] manrope">
                     Your Best Marketing Partner.
                   </p>
                 </div>
               </div>
-              <div className="right-half text-white z-10 flex justify-center items-center">
-                <div className=" mt-28  h-482 w-482 text-right">
-                  <p className="text-5xl ">
+              <div className="flex-1 flex-wrap  text-white z-10 lg:flex lg:justify-center lg:items-center">
+                <div className=" lg:mt-28  lg:h-482 flex flex-col justify-center items-center lg:items-end lg:w-482 lg:text-right">
+                  <p className="lg:text-5xl ml-3 lg:ml-0 text-[35px] ">
                     Creating animated videos with visual effects
                   </p>
-                  <button className="w-96 h-70 mt-10 manrope font-medium  bg-white text-black contact-button">
+                  <button className="lg:w-96 w-80 lg:h-70 h-14 lg:mt-10 mt-5 manrope font-medium  bg-white text-black contact-button">
                     Contact us
                   </button>
                 </div>
@@ -60,47 +70,58 @@ const Homepage: React.FC = () => {
           </div>
         </div>
         {/* ABOUT */}
-        <div id="About" className="home-item   lg:w-[1500px] md:w-[765px]">
-          <div className="flex  justify-center mt-20 mb-20 h-[500px]">
+        <div
+          id="About"
+          className="   lg:w-[1500px] md:w-[765px] h-[1500px]  lg:h-[670px]"
+        >
+          <div className="flex   justify-center mt-20 mb-20 lg:h-[500px] h-[1500px]">
             {/* Container with Two Equal Columns */}
-            <div className="flex w-full">
+            <div className="flex flex-col md:flex-row w-full">
               {/* Left Column */}
-              <div className="flex-1  flex flex-wrap justify-center items-center gap-4 p-4">
+              <div className="flex-1  flex flex-wrap justify-center items-center gap-1 lg:gap-4 p-2  lg:p-4">
                 {/* Box 1 */}
-                <div className="w-[240px] p-8 intro-box h-[175px] border border-gray-300  ">
-                  <div className="text-white text-5xl manrope">2018</div>
-                  <div className="text-white text-xl mt-1 manrope">
+                <div className="lg:w-[240px] w-[320px] h-[131px] p-2  lg:p-8 intro-box lg:h-[175px] border border-gray-300  ">
+                  <div className="text-white text-5xl manrope ml-6 lg:ml-0">
+                    2018
+                  </div>
+                  <div className="text-white text-xl mt-1 manrope ml-6 lg:ml-0">
                     Year's Founder
                   </div>
                 </div>
 
                 {/* Box 2 */}
-                <div className="w-[240px] p-8 intro-box h-[175px] border border-gray-300  ">
-                  <div className="text-white text-5xl manrope">20+</div>
-                  <div className="text-white text-xl mt-1 manrope">
+                <div className="lg:w-[240px] w-[320px] h-[131px] p-2  lg:p-8 intro-box lg:h-[175px] border border-gray-300  ">
+                  <div className="text-white text-5xl manrope ml-6 lg:ml-0">
+                    20+
+                  </div>
+                  <div className="text-white text-xl mt-1 manrope ml-6 lg:ml-0">
                     Professionals
                   </div>
                 </div>
 
                 {/* Box 3 */}
-                <div className="w-[240px] p-8 intro-box h-[175px] border border-gray-300  ">
-                  <div className="text-white text-5xl manrope">500+</div>
-                  <div className="text-white text-xl mt-1 manrope">
+                <div className="lg:w-[240px] w-[320px] h-[131px] p-2  lg:p-8 intro-box lg:h-[175px] border border-gray-300 ">
+                  <div className="text-white text-5xl manrope ml-6 lg:ml-0">
+                    500+
+                  </div>
+                  <div className="text-white text-xl mt-1 manrope ml-6 lg:ml-0">
                     Videos Collab
                   </div>
                 </div>
 
                 {/* Box 4 */}
-                <div className="w-[240px] p-6 intro-box h-[175px] border border-gray-300  ">
-                  <div className="text-white text-5xl manrope">50+</div>
-                  <div className="text-white text-xl mt-1 manrope">
+                <div className="lg:w-[240px] w-[320px] h-[131px] p-2  lg:p-8 intro-box lg:h-[175px] border border-gray-300  ">
+                  <div className="text-white text-5xl manrope ml-6 lg:ml-0">
+                    50+
+                  </div>
+                  <div className="text-white text-xl mt-1 manrope ml-6 lg:ml-0">
                     Brand Connections
                   </div>
                 </div>
               </div>
 
               {/* Right Column */}
-              <div className="flex-1">
+              <div className="flex-1  flex justify-center p-3">
                 <div className="flex p-4 ">
                   <div>
                     <div className="text-left text-[50px] text-white manrope">
@@ -130,82 +151,90 @@ const Homepage: React.FC = () => {
 
         <div
           id="Services"
-          className="home-item lg:h-[1500px] lg:w-1500  md:w-765 "
+          className="home-item  lg:h-[1500px] lg:w-1500  md:w-765 "
         >
-          <div className="flex mt-20   text-5xl manrope text-white  justify-end mr-12">
+          <div className="flex mt-20 p-1 lg:p-0  text-5xl manrope text-white  lg:justify-end ">
             Services
           </div>
-          <div className="flex justify-center gap-8 p-8 mt-6  ">
-            {/* GIF Box 1 */}
-            <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg  ">
+          <div className="lg:flex gap-8 justify-center lg:mt-6 lg:p-8 p-2">
+            <div>
+              <div className="lg:w-[450px] w-[340px] h-[286px]  lg:h-[250px] overflow-hidden rounded-lg  ">
+                <img
+                  src={mono}
+                  alt="Gif 1"
+                  className="object-cover gif-box w-full h-full"
+                />
+              </div>
+              <div>
+                <div className="lg:w-[450px] h-[420px] w-[350px]   lg:h-[400px] lg:mt-20 mt-12  overflow-hidden  details-box text-white p-3 ">
+                  <div className="lg:text-2xl text-xl">01</div>
+                  <div className="lg:text-3xl text-2xl mt-2 mb-3">CGI</div>
+                  <div className="text-xl ">
+                    Computer Generated Imagery (CGI) services. creating top-tier
+                    3D visualizations, animations, and visual effects (VFX) for
+                    various media such as images, films, and interactive
+                    applications.  We work for clients worldwide – corporations,
+                    mid-size enterprises, agencies and film productions
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className=" mt-12 lg:mt-0 lg:w-[450px] w-[340px] h-[286px]  lg:h-[250px] overflow-hidden rounded-lg ">
+                <img
+                  src={afc}
+                  alt="Gif 1"
+                  className="object-cover gif-box w-full h-full"
+                />
+              </div>
+              <div className="lg:w-[450px] w-[350px] h-[320px]  lg:h-[400px] lg:mt-20 mt-12  overflow-hidden  details-box text-white p-3">
+                <div className="lg:text-2xl text-xl">02</div>
+                <div className="lg:text-3xl text-2xl mt-2 mb-3">
+                  Color - Grading
+                </div>
+                <div className="text-xl ">
+                  Elevate your visuals with our expert colour grading solutions.
+                  We enhance the mood, consistency, and overall aesthetic of
+                  your content, ensuring it stands out and captivates your
+                  audience.
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="mt-12 lg:mt-0 lg:w-[450px] w-[340px] h-[286px]  lg:h-[250px] overflow-hidden rounded-lg ">
+                <img
+                  src={tuborg2}
+                  alt="Gif 1"
+                  className="object-cover gif-box w-full h-full"
+                />
+              </div>
+              <div className="lg:w-[450px] w-[350px] h-[420px]   lg:h-[400px] lg:mt-20 mt-12  overflow-hidden  details-box text-white p-3 ">
+                <div className="lg:text-2xl text-xl">03</div>
+                <div className="lg:text-3xl text-2xl mt-2 mb-3">Graphics</div>
+                <div className="text-xl ">
+                  Regardless of whether it’s 2D or 3D, our services excel in
+                  providing cutting-edge graphics and motion graphics to enhance
+                  the visual appeal of your content. Our expertise spans
+                  everything from typefaces and compositing shots to creating
+                  captivating animated sequences.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="lg:flex justify-center gap-8 lg:p-8 p-2    ">
+            {/* Details Box 1 */}
+            <div className=" lg:hidden  lg:mt-0 lg:w-[450px] w-[340px] h-[286px]  lg:h-[250px] overflow-hidden rounded-lg ">
               <img
-                src={mono}
+                src={haohao}
                 alt="Gif 1"
                 className="object-cover gif-box w-full h-full"
               />
             </div>
-
-            {/* GIF Box 2 */}
-            <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg ">
-              <img
-                src={afc}
-                alt="Gif 2"
-                className="object-cover gif-box w-full h-full"
-              />
-            </div>
-
-            {/* GIF Box 3 */}
-            <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg ">
-              <img
-                src={tuborg2}
-                alt="Gif 3"
-                className="object-cover gif-box w-full h-full"
-              />
-            </div>
-          </div>
-          <div className="flex justify-center gap-8 p-8 mt-6  ">
-            {/* Details Box 1 */}
-            <div className="w-[450px]  h-[400px]  overflow-hidden  details-box text-white p-3 ">
-              <div className="text-2xl">01</div>
-              <div className="text-3xl mt-2 mb-3">CGI</div>
-              <div className="text-xl">
-                Computer Generated Imagery (CGI) services. creating top-tier 3D
-                visualizations, animations, and visual effects (VFX) for various
-                media such as images, films, and interactive applications.  We
-                work for clients worldwide – corporations, mid-size enterprises,
-                agencies and film productions
+            <div className="lg:w-[450px] w-[350px] h-[460px]   lg:h-[400px] lg:mt-0 mt-12  overflow-hidden  details-box text-white p-3 ">
+              <div className="lg:text-2xl text-xl">04</div>
+              <div className="lg:text-3xl text-2xl mt-2 mb-3">
+                Post Production
               </div>
-            </div>
-
-            {/* Details Box 2 */}
-            <div className="w-[450px]  h-[400px]  overflow-hidden  details-box text-white p-3 ">
-              <div className="text-2xl">02</div>
-              <div className="text-3xl mt-2 mb-3">Color - Grading</div>
-              <div className="text-xl">
-                Elevate your visuals with our expert colour grading solutions.
-                We enhance the mood, consistency, and overall aesthetic of your
-                content, ensuring it stands out and captivates your audience.
-              </div>
-            </div>
-
-            {/* Details Box 3 */}
-            <div className="w-[450px]  h-[400px]  overflow-hidden  details-box text-white p-3 ">
-              <div className="text-2xl">03</div>
-              <div className="text-3xl mt-2 mb-3">Graphics</div>
-              <div className="text-xl">
-                Regardless of whether it’s 2D or 3D, our services excel in
-                providing cutting-edge graphics and motion graphics to enhance
-                the visual appeal of your content. Our expertise spans
-                everything from typefaces and compositing shots to creating
-                captivating animated sequences.
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-center gap-8 p-8   ">
-            {/* Details Box 1 */}
-            <div className="w-[450px]  h-[400px]  overflow-hidden  details-box text-white p-3 ">
-              <div className="text-2xl">04</div>
-              <div className="text-3xl mt-2 mb-3">Post Production</div>
               <div className="text-xl">
                 <ul className="list-disc ml-5">
                   <p>Tracking and Matchmoving:</p>
@@ -227,9 +256,16 @@ const Homepage: React.FC = () => {
             </div>
 
             {/* Details Box 2 */}
-            <div className="w-[450px]  h-[400px]  overflow-hidden  details-box text-white p-3 ">
-              <div className="text-2xl">05</div>
-              <div className="text-3xl mt-2 mb-3">VFX</div>
+            <div className=" lg:hidden  mt-12 lg:mt-0 lg:w-[450px] w-[340px] h-[286px]  lg:h-[250px] overflow-hidden rounded-lg ">
+              <img
+                src={ht2}
+                alt="Gif 1"
+                className="object-cover gif-box w-full h-full"
+              />
+            </div>
+            <div className="lg:w-[450px] w-[350px] h-[320px]    lg:h-[400px] lg:mt-0 mt-12  overflow-hidden  details-box text-white p-3  ">
+              <div className="lg:text-2xl text-xl">05</div>
+              <div className="lg:text-3xl text-2xl mt-2 mb-3">VFX</div>
               <div className="text-xl">
                 Elevate your visuals with our expert colour grading solutions.
                 We enhance the mood, consistency, and overall aesthetic of your
@@ -241,34 +277,36 @@ const Homepage: React.FC = () => {
 
         <div
           id="Software"
-          className="home-item  lg:w-1500  md:w-765 lg:h-[1500px] "
+          className="home-item  lg:w-1500    md:w-765 lg:h-[1360px] "
         >
-          <div className="flex mt-20   text-5xl manrope text-white  justify-start ml-12">
+          <div className="flex mt-20 p-1 lg:p-0 text-5xl manrope text-white  justify-start lg:ml-12">
             Software Proficiency
           </div>
-          <div className="flex  text-xl manrope text-white  justify-start ml-12">
+          <div className="flex p-1 lg:p-0  text-xl manrope text-white  justify-start lg:ml-12">
             At Moonlight Studio, we prfioritize technical skill and a methodical
             approach to post-production, ensuring that every project we
             undertake is executed with attention to detail and technical
             prowess.
           </div>
           {/*HOUDINI*/}
-          <div className="flex home-software    justify-center mt-20  h-[350px]">
-            <div className="flex w-full">
+          <div className="flex home-software    justify-center mt-20  lg:h-[350px]">
+            <div className="flex flex-col md:flex-row w-full">
               {/* Left Column */}
               <div className="flex-1 flex flex-wrap justify-center items-center  ">
-                <div className="w-[500px] h-[280px] bg-black flex justify-center items-center">
+                <div className="w-[400px] h-[230px] bg-black flex justify-center items-center">
                   <img
                     src={Houdini}
-                    className="object-contain h-[260px] w-[450px]"
+                    className="object-contain h-[260px] w-[250px]"
                   ></img>
                 </div>
               </div>
 
               {/* Right Column */}
-              <div className="flex-1  text-white p-6 manrope">
-                <div className="text-3xl font-bold mb-5">Houdini</div>
-                <div className="text-2xl">
+              <div className="flex-1  text-white p-2 lg:p-6 manrope">
+                <div className="text-3xl font-bold lg:mb-5 lg:mt-5 mt-3 mb-3">
+                  Houdini
+                </div>
+                <div className="lg:text-2xl text-xl">
                   Utilized for complex simulations, Houdini allows us to
                   accurately replicate physical phenomena such as fluids, smoke,
                   and fire, providing a high level of realism in our visual
@@ -278,22 +316,24 @@ const Homepage: React.FC = () => {
             </div>
           </div>
           {/*CINEMA4D*/}
-          <div className="flex home-software    justify-center  h-[350px]">
-            <div className="flex w-full">
+          <div className="flex home-software    justify-center mt-10 lg:mt-0  lg:h-[350px]">
+            <div className="flex flex-col md:flex-row w-full">
               {/* Left Column */}
               <div className="flex-1 flex flex-wrap justify-center items-center  ">
-                <div className="w-[500px] h-[280px] bg-white flex justify-center items-center">
+                <div className="w-[400px] h-[230px] bg-white flex justify-center items-center">
                   <img
                     src={Cinema4D}
-                    className="object-contain h-[260px] w-[450px]"
+                    className="object-contain h-[260px] w-[300px]"
                   ></img>
                 </div>
               </div>
 
               {/* Right Column */}
-              <div className="flex-1  text-white p-6 manrope">
-                <div className="text-3xl font-bold mb-5">Cinema 4D</div>
-                <div className="text-2xl">
+              <div className="flex-1  text-white p-2 lg:p-6 manrope">
+                <div className="text-3xl font-bold lg:mb-5 lg:mt-5 mt-3 mb-3">
+                  Cinema 4D
+                </div>
+                <div className="lg:text-2xl text-xl">
                   Chosen for its robust modeling capabilities and efficient
                   workflow, Cinema 4D aids us in creating detailed 3D models and
                   engaging animations.
@@ -302,22 +342,24 @@ const Homepage: React.FC = () => {
             </div>
           </div>
           {/*UNREAL*/}
-          <div className="flex home-software    justify-center  h-[350px]">
-            <div className="flex w-full">
+          <div className="flex home-software    justify-center mt-10 lg:mt-0  lg:h-[350px]">
+            <div className="flex flex-col md:flex-row w-full">
               {/* Left Column */}
               <div className="flex-1 flex flex-wrap justify-center items-center  ">
-                <div className="w-[500px] h-[280px] bg-black flex justify-center items-center">
+                <div className="w-[400px] h-[230px] bg-black flex justify-center items-center">
                   <img
                     src={Unreal}
-                    className="object-contain h-[200px] w-[450px]"
+                    className="object-contain h-[200px] w-[300px]"
                   ></img>
                 </div>
               </div>
 
               {/* Right Column */}
-              <div className="flex-1  text-white p-6 manrope">
-                <div className="text-3xl font-bold mb-5">Unreal Engine</div>
-                <div className="text-2xl">
+              <div className="flex-1  text-white p-2 lg:p-6 manrope">
+                <div className="text-3xl font-bold lg:mb-5 lg:mt-5 mt-3 mb-3">
+                  Unreal Engine
+                </div>
+                <div className="lg:text-2xl text-xl">
                   Leveraged for virtual production, Unreal Engine enables us to
                   integrate live-action footage with CGI, creating dynamic and
                   interactive environments with real-time rendering.
@@ -328,25 +370,25 @@ const Homepage: React.FC = () => {
         </div>
         <div
           id="Customers"
-          className="home-item bg-blue-300 lg:w-1500  md:w-765 lg:h-[1020px]  "
+          className="home-item  lg:w-1500  md:w-765 lg:h-[1020px]  "
         >
-          <div className="home-item bg-red-300   lg:w-[1500px] md:w-[765px]">
-            <div className="flex mt-20   text-5xl manrope text-white  justify-end mr-12">
+          <div className="home-item   lg:w-[1500px] md:w-[765px]">
+            <div className="flex mt-20 p-1 lg:p-0  text-5xl manrope text-white  lg:justify-end lg:mr-12">
               Customers Priority
             </div>
-            <div className="flex  justify-center mt-5   h-[250px]">
+            <div className="flex  justify-center mt-5  h-[600px] lg:h-[250px]">
               {/* Container with Two Equal Columns */}
-              <div className="flex w-full">
+              <div className="flex flex-col md:flex-row w-full">
                 {/* Left Column */}
                 <div className="flex-1   flex flex-wrap justify-center items-center  ">
-                  <div className="home-customers flex   h-[200px] w-[510px]">
-                    <div className="home-circle flex justify-center items-center">
+                  <div className="home-customers lg:flex  h-[250px]  lg:h-[200px] w-[510px]">
+                    <div className="home-circle lg:w-[200px] w-[100px] h-[100px] lg:h-[200px] flex justify-center items-center">
                       <img
-                        className="lg:h-[100px] stroke-white object-contain"
+                        className="lg:h-[100px] h-[60px] stroke-white object-contain"
                         src={plus}
                       ></img>
                     </div>
-                    <div className="home-rectangle flex justify-center items-center text-white text-xl p-4">
+                    <div className=" absolute lg:ml-[160px] h-[100px] w-[340px] mt-5 lg:mt-0 lg:h-[200px] lg:w-[350px] home-rectangle flex justify-center items-center text-white text-xl p-4">
                       Arrange suitable quality personnel for jobs.
                     </div>
                   </div>
@@ -354,46 +396,47 @@ const Homepage: React.FC = () => {
 
                 {/* Right Column */}
                 <div className="flex-1 flex flex-wrap  justify-center items-center  ">
-                  <div className="flex-1   flex flex-wrap justify-center items-center  ">
-                    <div className="home-customers flex  h-[200px] w-[510px]">
-                      <div className="home-circle flex justify-center items-center">
-                        <img src={man} className="lg:h-[80px]"></img>
-                      </div>
-                      <div className="home-rectangle flex justify-center items-center text-white text-xl p-4">
-                        Strengthen supplementary personnel - serving specialized
-                        quality job requirements (motion control, simulation,
-                        roto scoping,...)
-                      </div>
+                  <div className="home-customers lg:flex  h-[350px]  lg:h-[200px] w-[510px]">
+                    <div className="home-circle lg:w-[200px] w-[100px] h-[100px] lg:h-[200px] flex justify-center items-center">
+                      <img
+                        src={man}
+                        className="lg:h-[100px] h-[60px] stroke-white object-contain"
+                      ></img>
+                    </div>
+                    <div className="absolute lg:ml-[160px] h-[200px] w-[340px] mt-5 lg:mt-0 lg:h-[200px] lg:w-[350px] home-rectangle flex justify-center items-center text-white text-xl p-4">
+                      Strengthen supplementary personnel - serving specialized
+                      quality job requirements (motion control, simulation, roto
+                      scoping,...)
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className=" lg:h-[270px] flex justify-center items-center">
+            <div className=" lg:h-[270px] lg:flex lg:justify-center lg:items-center">
               <div className="flex-1   flex flex-wrap justify-center items-center  ">
-                <div className="home-customers flex  h-[200px] w-[510px]">
-                  <div className="home-circle-star flex justify-center items-center">
-                    <img src={golden} className="lg:h-[100px]"></img>
+                <div className="home-customers lg:flex  h-[280px]  lg:h-[200px] w-[510px]">
+                  <div className="home-circle-star lg:w-[200px] w-[100px] h-[100px] lg:h-[200px] flex justify-center items-center">
+                    <img src={golden} className="lg:h-[100px] h-[50px]"></img>
                   </div>
-                  <div className="home-rectangle flex justify-center items-center text-white text-xl p-4">
+                  <div className="absolute lg:ml-[160px] h-[120px] w-[340px] mt-5 lg:mt-0 lg:h-[200px] lg:w-[350px] home-rectangle flex justify-center items-center text-white text-xl p-4">
                     Priority is given to serving jobs requirement ASAP.
                   </div>
                 </div>
               </div>
             </div>
-            <div className="flex  justify-center    h-[250px]">
+            <div className="flex  justify-center lg:mt-5  h-[600px] lg:h-[250px]">
               {/* Container with Two Equal Columns */}
-              <div className="flex w-full">
+              <div className="flex flex-col md:flex-row w-full">
                 {/* Left Column */}
                 <div className="flex-1   flex flex-wrap justify-center items-center  ">
-                  <div className="home-customers flex   h-[200px] w-[510px]">
-                    <div className="home-circle flex justify-center items-center">
+                  <div className="home-customers lg:flex  h-[350px]  lg:h-[200px] w-[510px]">
+                    <div className="home-circle lg:w-[200px] w-[100px] h-[100px] lg:h-[200px] flex justify-center items-center">
                       <img
-                        className="lg:h-[110px] stroke-white object-contain"
+                        className="lg:h-[100px] h-[60px] stroke-white object-contain"
                         src={chat}
                       ></img>
                     </div>
-                    <div className="home-rectangle flex justify-center items-center text-white text-xl p-4">
+                    <div className="absolute lg:ml-[160px] h-[200px] w-[340px] mt-5 lg:mt-0 lg:h-[200px] lg:w-[350px] home-rectangle flex justify-center items-center text-white text-xl p-4">
                       Support the implementation of Animatics for Production
                       House pitching (last-round), or support Animation demo for
                       the pre-production phase.
@@ -403,17 +446,18 @@ const Homepage: React.FC = () => {
 
                 {/* Right Column */}
                 <div className="flex-1 flex flex-wrap  justify-center items-center  ">
-                  <div className="flex-1   flex flex-wrap justify-center items-center  ">
-                    <div className="home-customers flex  h-[200px] w-[510px]">
-                      <div className="home-circle flex justify-center items-center">
-                        <img src={handshake} className="lg:h-[110px]"></img>
-                      </div>
-                      <div className="home-rectangle flex justify-center items-center text-white text-xl p-4">
-                        Both parties are responsible for securing Priority
-                        information together, and commit that the content of the
-                        collaboration will not be disclosed to any third party
-                        in any form
-                      </div>
+                  <div className="home-customers lg:flex h-[350px]  lg:h-[200px] w-[510px]">
+                    <div className="home-circle lg:w-[200px] w-[100px] h-[100px] lg:h-[200px] flex justify-center items-center">
+                      <img
+                        src={handshake}
+                        className="lg:h-[110px] h-[70px]"
+                      ></img>
+                    </div>
+                    <div className="absolute lg:ml-[160px] h-[200px] w-[340px] mt-5 lg:mt-0 lg:h-[200px] lg:w-[350px] home-rectangle flex justify-center items-center text-white text-xl p-4">
+                      Both parties are responsible for securing Priority
+                      information together, and commit that the content of the
+                      collaboration will not be disclosed to any third party in
+                      any form
                     </div>
                   </div>
                 </div>
@@ -421,7 +465,10 @@ const Homepage: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="home-item bg-blue-300 lg:w-1500  md:w-765 lg:h-[500px]  ">
+        <div className="home-item  lg:w-1500  md:w-765 lg:h-[550px]  ">
+          <div className="flex lg:mt-20 mt-28 p-1 lg:p-0  text-5xl manrope text-white  lg:justify-start lg:mr-12">
+            Some of our works
+          </div>
           <Swiper
             scrollbar={{
               hide: true,
@@ -434,16 +481,106 @@ const Homepage: React.FC = () => {
                 {/* GIF Box 1 */}
                 <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg  ">
                   <img
-                    src={mono}
+                    src={ht2}
                     alt="Gif 1"
                     className="object-cover gif-box w-full h-full"
                   />
                 </div>
 
                 {/* GIF Box 2 */}
-                <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg ">
+                <div className="w-[450px] hidden lg:flex h-[250px] overflow-hidden rounded-lg ">
+                  <img
+                    src={grab}
+                    alt="Gif 2"
+                    className="object-cover gif-box w-full h-full"
+                  />
+                </div>
+
+                {/* GIF Box 3 */}
+                <div className="w-[450px]  hidden lg:flex  h-[250px] overflow-hidden rounded-lg ">
+                  <img
+                    src={fco}
+                    alt="Gif 3"
+                    className="object-cover gif-box w-full h-full"
+                  />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="flex justify-center gap-8 p-8 mt-6  ">
+                {/* GIF Box 1 */}
+                <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg  ">
+                  <img
+                    src={cvit}
+                    alt="Gif 1"
+                    className="object-cover gif-box w-full h-full"
+                  />
+                </div>
+
+                {/* GIF Box 2 */}
+                <div className="w-[450px]  hidden lg:flex h-[250px] overflow-hidden rounded-lg ">
+                  <img
+                    src={tuborg2}
+                    alt="Gif 2"
+                    className="object-cover gif-box w-full h-full"
+                  />
+                </div>
+
+                {/* GIF Box 3 */}
+                <div className="w-[450px]  hidden lg:flex h-[250px] overflow-hidden rounded-lg ">
                   <img
                     src={afc}
+                    alt="Gif 3"
+                    className="object-cover gif-box w-full h-full"
+                  />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="flex justify-center gap-8 p-8 mt-6  ">
+                {/* GIF Box 1 */}
+                <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg  ">
+                  <img
+                    src={haohao}
+                    alt="Gif 1"
+                    className="object-cover gif-box w-full h-full"
+                  />
+                </div>
+
+                {/* GIF Box 2 */}
+                <div className="w-[450px]  hidden lg:flex h-[250px] overflow-hidden rounded-lg ">
+                  <img
+                    src={mono}
+                    alt="Gif 2"
+                    className="object-cover gif-box w-full h-full"
+                  />
+                </div>
+
+                {/* GIF Box 3 */}
+                <div className="w-[450px]  hidden lg:flex h-[250px] overflow-hidden rounded-lg ">
+                  <img
+                    src={klook}
+                    alt="Gif 3"
+                    className="object-cover gif-box w-full h-full"
+                  />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="flex justify-center gap-8 p-8 mt-6  ">
+                {/* GIF Box 1 */}
+                <div className="w-[450px]  hidden lg:flex h-[250px] overflow-hidden rounded-lg  ">
+                  <img
+                    src={ngocdung}
+                    alt="Gif 1"
+                    className="object-cover gif-box w-full h-full"
+                  />
+                </div>
+
+                {/* GIF Box 2 */}
+                <div className="w-[450px]  hidden lg:flex h-[250px] overflow-hidden rounded-lg ">
+                  <img
+                    src={pho}
                     alt="Gif 2"
                     className="object-cover gif-box w-full h-full"
                   />
@@ -452,21 +589,13 @@ const Homepage: React.FC = () => {
                 {/* GIF Box 3 */}
                 <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg ">
                   <img
-                    src={tuborg2}
+                    src={xiaomi}
                     alt="Gif 3"
                     className="object-cover gif-box w-full h-full"
                   />
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
           </Swiper>
         </div>
       </div>
