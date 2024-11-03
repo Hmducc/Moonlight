@@ -93,7 +93,7 @@ const Homepage: React.FC = () => {
                   </div>
 
                   {/* Box 2 */}
-                  <div className="lg:w-[280px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border mt-5 border-gray-300">
+                  <div className="lg:w-[280px] w-[320px] h-[131px] p-2 lg:p-8  intro-box lg:h-[175px] border mt-5 border-gray-300">
                     <div className="text-white text-5xl manrope ml-6 lg:ml-0">
                       20+
                     </div>
@@ -126,7 +126,7 @@ const Homepage: React.FC = () => {
               </div>
 
               {/* Right Column */}
-              <div className="flex-1  flex justify-center  p-3">
+              <div className="flex-1  flex justify-center mt-5 p-3">
                 <div className="flex p-4 ">
                   <div>
                     <div className="text-left text-[50px] text-white manrope">
