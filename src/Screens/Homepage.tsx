@@ -81,49 +81,52 @@ const Homepage: React.FC = () => {
             <div className="flex flex-col md:flex-row w-full">
               {/* Left Column */}
               <div className="flex-1  lg:w-[100px] flex flex-wrap justify-center items-center md:gap-7 lg:gap-4 p-2 lg:p-4">
-                {/* Box 1 */}
-                <div className="lg:w-[280px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
-                  <div className="text-white text-5xl manrope ml-6 lg:ml-0">
-                    2018
+                <div>
+                  {/* Box 1 */}
+                  <div className="lg:w-[280px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
+                    <div className="text-white text-5xl manrope ml-6 lg:ml-0">
+                      2018
+                    </div>
+                    <div className="text-white text-xl mt-1 manrope ml-6 lg:ml-0">
+                      Year's Founder
+                    </div>
                   </div>
-                  <div className="text-white text-xl mt-1 manrope ml-6 lg:ml-0">
-                    Year's Founder
+
+                  {/* Box 2 */}
+                  <div className="lg:w-[280px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border mt-5 border-gray-300">
+                    <div className="text-white text-5xl manrope ml-6 lg:ml-0">
+                      20+
+                    </div>
+                    <div className="text-white text-xl mt-1 manrope ml-6 lg:ml-0">
+                      Professionals
+                    </div>
                   </div>
                 </div>
+                <div className="">
+                  {/* Box 3 */}
+                  <div className="lg:w-[280px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
+                    <div className="text-white text-5xl manrope ml-6 lg:ml-0">
+                      500+
+                    </div>
+                    <div className="text-white text-xl mt-1 manrope ml-6 lg:ml-0">
+                      Videos Collab
+                    </div>
+                  </div>
 
-                {/* Box 2 */}
-                <div className="lg:w-[280px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
-                  <div className="text-white text-5xl manrope ml-6 lg:ml-0">
-                    20+
-                  </div>
-                  <div className="text-white text-xl mt-1 manrope ml-6 lg:ml-0">
-                    Professionals
-                  </div>
-                </div>
-
-                {/* Box 3 */}
-                <div className="lg:w-[280px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
-                  <div className="text-white text-5xl manrope ml-6 lg:ml-0">
-                    500+
-                  </div>
-                  <div className="text-white text-xl mt-1 manrope ml-6 lg:ml-0">
-                    Videos Collab
-                  </div>
-                </div>
-
-                {/* Box 4 */}
-                <div className="lg:w-[280px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
-                  <div className="text-white text-5xl manrope ml-6 lg:ml-0">
-                    50+
-                  </div>
-                  <div className="text-white text-xl mt-1 manrope ml-6 lg:ml-0">
-                    Brand Connections
+                  {/* Box 4 */}
+                  <div className="lg:w-[280px] w-[320px] h-[131px] p-2 mt-5 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
+                    <div className="text-white text-5xl manrope ml-6 lg:ml-0">
+                      50+
+                    </div>
+                    <div className="text-white text-xl mt-1 manrope ml-6 lg:ml-0">
+                      Brand Connections
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Right Column */}
-              <div className="flex-1  flex justify-center p-3">
+              <div className="flex-1  flex justify-center  p-3">
                 <div className="flex p-4 ">
                   <div>
                     <div className="text-left text-[50px] text-white manrope">
