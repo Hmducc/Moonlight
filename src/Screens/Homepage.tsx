@@ -82,7 +82,7 @@ const Homepage: React.FC = () => {
               {/* Left Column */}
               <div className="flex-1  lg:w-[100px] flex flex-wrap justify-center items-center md:gap-7 lg:gap-4 p-2 lg:p-4">
                 {/* Box 1 */}
-                <div className="lg:w-[260px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
+                <div className="lg:w-[280px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
                   <div className="text-white text-5xl manrope ml-6 lg:ml-0">
                     2018
                   </div>
@@ -92,7 +92,7 @@ const Homepage: React.FC = () => {
                 </div>
 
                 {/* Box 2 */}
-                <div className="lg:w-[260px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
+                <div className="lg:w-[280px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
                   <div className="text-white text-5xl manrope ml-6 lg:ml-0">
                     20+
                   </div>
@@ -102,7 +102,7 @@ const Homepage: React.FC = () => {
                 </div>
 
                 {/* Box 3 */}
-                <div className="lg:w-[260px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
+                <div className="lg:w-[280px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
                   <div className="text-white text-5xl manrope ml-6 lg:ml-0">
                     500+
                   </div>
@@ -112,7 +112,7 @@ const Homepage: React.FC = () => {
                 </div>
 
                 {/* Box 4 */}
-                <div className="lg:w-[260px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
+                <div className="lg:w-[280px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
                   <div className="text-white text-5xl manrope ml-6 lg:ml-0">
                     50+
                   </div>
