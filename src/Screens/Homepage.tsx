@@ -80,7 +80,7 @@ const Homepage: React.FC = () => {
             {/* Container with Two Equal Columns */}
             <div className="flex flex-col md:flex-row w-full">
               {/* Left Column */}
-              <div className="flex-1  lg:w-[100px] flex flex-wrap justify-center items-center md:gap-7 lg:gap-4 p-2 lg:p-4">
+              <div className="flex-1 flex-col lg:w-[100px] flex flex-wrap justify-center items-center md:gap-7 lg:gap-4 p-2 lg:p-4">
                 <div>
                   {/* Box 1 */}
                   <div className="lg:w-[280px] w-[320px] h-[131px] p-2 lg:p-8 intro-box lg:h-[175px] border border-gray-300">
