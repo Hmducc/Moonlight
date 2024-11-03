@@ -378,7 +378,7 @@ const Homepage: React.FC = () => {
             <div className="flex mt-20 p-1 lg:p-0  text-5xl manrope text-white  lg:justify-end lg:mr-12">
               Customers Priority
             </div>
-            <div className="flex  justify-center mt-5  md:h-[380px] items-center  h-[600px] lg:h-[250px]">
+            <div className="flex  justify-center mt-5  md:h-[380px] items-center  h-[700px] lg:h-[250px]">
               {/* Container with Two Equal Columns */}
               <div className="flex flex-col  md:flex-row w-full">
                 {/* Left Column */}
