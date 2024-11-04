@@ -82,9 +82,6 @@ const InfiniteLooper = function InfiniteLooper({
 
 const Brands = () => (
   <div className="app  ">
-    <div className="text-white z-10 mb-5 ml-5 manrope">
-      Making TVC Videos for Companies, Corporations
-    </div>
     <InfiniteLooper speed={25} direction="right">
       <div className="contentBlock contentBlock--one lg:w-[180px] lg:h-[70px] w-[110px] h-[50px]"></div>
       <div className="contentBlock contentBlock--two lg:w-[180px] lg:h-[70px] w-[110px] h-[50px]"></div>

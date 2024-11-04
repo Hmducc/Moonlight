@@ -50,7 +50,7 @@
 .diamond-container .z-10 {
   position: relative;
 
-  z-index: 10; /* Keeps the text above the blurred background */
+  z-index: 10;
 }
 
 .column {

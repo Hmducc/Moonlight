@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper/modules";
@@ -27,6 +27,12 @@ import Navbar from "./Navbar";
 import Services from "./Services";
 import Software from "./Software";
 const Homepage: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Function to toggle modal visibility
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
   return (
     <div className="home-bg overlay bg-scroll">
       <div className="flex flex-col items-center justify-center">
@@ -54,10 +60,100 @@ const Homepage: React.FC = () => {
                   <p className="lg:text-5xl ml-3  lg:ml-0 text-[35px] ">
                     Creating animated videos with visual effects
                   </p>
-                  <div className=" flex justify-center items-center lg:justify-end ">
-                    <button className="lg:w-96 w-80  lg:h-70 h-14 lg:mt-10 mt-5 manrope font-medium  bg-white text-black contact-button">
+                  <div className="flex justify-center items-center lg:justify-end">
+                    <button
+                      className="lg:w-96 w-80 lg:h-70 h-14 lg:mt-10 mt-5 manrope font-medium bg-white text-black contact-button"
+                      onClick={toggleModal} // Open modal on button click
+                    >
                       Contact us
                     </button>
+
+                    {/* Modal */}
+                    {isModalOpen && (
+                      <div className="fixed inset-0 flex items-center  justify-center z-50 bg-black bg-opacity-50">
+                        <div className="bg-black md:w-[90%] w-[80%] lg:w-[50%] z-50 h-auto p-6 rounded-lg shadow-lg relative">
+                          <button
+                            className="absolute top-2 right-2 text-white hover:text-gray-300"
+                            onClick={toggleModal}
+                          >
+                            ✕
+                          </button>
+                          <div></div>
+                          <h2 className="text-2xl font-semibold  mb-4 manrope text-white text-center">
+                            MOONLIGHT STUDIO
+                          </h2>
+                          <div className="text-white text-left lg:h-10 justify-center  flex flex-col md:flex-row w-full">
+                            <div className=" flex items-center  mt-3 lg:mt-0 justify-start md:justify-center flex-1 flex-row flex-wrap">
+                              <a
+                                href="https://www.facebook.com/@moonlightstudiovfx"
+                                target="blank"
+                              >
+                                <img
+                                  src={fb}
+                                  className="w-5 h-5 filter invert "
+                                  alt="Facebook"
+                                />
+                              </a>
+                              <a
+                                href="https://www.facebook.com/@moonlightstudiovfx"
+                                className="ml-5"
+                                target="blank"
+                              >
+                                Moonlight Studio
+                              </a>
+                            </div>
+                            <div className=" flex-1 flex items-center mt-5 lg:mt-0 justify-start md:justify-center  flex-row flex-wrap">
+                              <a
+                                href="https://www.instagram.com"
+                                target="blank"
+                              >
+                                <img
+                                  src={ig}
+                                  className="w-5 h-5 filter invert"
+                                  alt="Instagram"
+                                />
+                              </a>
+                              <a
+                                href="https://www.instagram.com"
+                                className="ml-5"
+                              >
+                                https://www.instagram.com
+                              </a>
+                            </div>
+                          </div>
+                          <div className=" text-left lg:h-10 justify-center  mt-5 lg:mt-0   flex flex-col md:flex-row w-full">
+                            <div className=" flex-1 flex  items-center justify-start md:justify-center  flex-row flex-wrap">
+                              <a
+                                href="https://vimeo.com/moonlightstudiovn"
+                                target="blank"
+                              >
+                                <img
+                                  src={vimeo}
+                                  className="w-5 h-5 filter invert"
+                                  alt="Vimeo"
+                                />
+                              </a>
+                              <a
+                                href="https://vimeo.com/moonlightstudiovn"
+                                className="ml-5"
+                                target="blank"
+                              >
+                                Moonlight Studio
+                              </a>
+                            </div>
+                            <div className="flex-1 flex items-center  mt-5 lg:mt-0 justify-start md:justify-center  flex-row flex-wrap">
+                              <a>
+                                <img
+                                  src={phone}
+                                  className="w-5 h-5 filter invert"
+                                />
+                              </a>
+                              <p className="ml-5">0123456789</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
