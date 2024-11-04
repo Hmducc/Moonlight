@@ -25,6 +25,11 @@ export default {
         800: "50rem",
         500: "31.25rem",
       },
+      screens: {
+        "ipad-pro": "1024px",
+        lg: "1180px",
+        // => @media (min-width: 1280px) { ... }
+      },
     },
   },
   plugins: [],
