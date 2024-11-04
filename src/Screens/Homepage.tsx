@@ -5,11 +5,14 @@ import { Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import fb from "../assets/facebook.svg";
 import fb2 from "../assets/facebook2.svg";
+
 import afc from "../assets/GIF/afc.gif";
 import cvit from "../assets/GIF/cvit.gif";
+
+import haohao from "../assets/GIF/Haohao-color.gif";
+
 import fco from "../assets/GIF/fco3.gif";
 import grab from "../assets/GIF/Grab-color.gif";
-import haohao from "../assets/GIF/Haohao-color.gif";
 import ht2 from "../assets/GIF/ht2.gif";
 import klook from "../assets/GIF/Klook-color.gif";
 import mono from "../assets/GIF/mono.gif";
@@ -38,6 +41,20 @@ const Homepage: React.FC = () => {
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
+
+  const [isGifModalOpen, setIsGifModalOpen] = useState(false);
+  const [activeGif, setActiveGif] = useState<string | null>(null);
+
+  const openGifModal = (gif: string) => {
+    setActiveGif(gif);
+    setIsGifModalOpen(true);
+  };
+
+  const closeGifModal = () => {
+    setIsGifModalOpen(false);
+    setActiveGif(null);
+  };
+
   return (
     <div className="home-bg overlay bg-scroll">
       <div className="flex flex-col items-center justify-center">
@@ -209,16 +226,17 @@ const Homepage: React.FC = () => {
             Some of our works
           </div>
           <Swiper
-            scrollbar={{
-              hide: true,
-            }}
+            scrollbar={{ hide: true }}
             modules={[Scrollbar]}
             className="mySwiper h-[350px]"
           >
             <SwiperSlide>
-              <div className="flex justify-center gap-8 p-8 mt-6 w-full ">
+              <div className="flex justify-center gap-8 p-8 mt-6 w-full">
                 {/* GIF Box 1 */}
-                <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg  ">
+                <div
+                  className="w-[450px] h-[250px] overflow-hidden rounded-lg cursor-pointer"
+                  onClick={() => openGifModal("ht2")}
+                >
                   <img
                     src={ht2}
                     alt="Gif 1"
@@ -227,7 +245,10 @@ const Homepage: React.FC = () => {
                 </div>
 
                 {/* GIF Box 2 */}
-                <div className="w-[450px] hidden md:flex h-[250px] overflow-hidden rounded-lg ">
+                <div
+                  className="w-[450px] hidden md:flex h-[250px] overflow-hidden rounded-lg cursor-pointer"
+                  onClick={() => openGifModal("grab")}
+                >
                   <img
                     src={grab}
                     alt="Gif 2"
@@ -236,7 +257,10 @@ const Homepage: React.FC = () => {
                 </div>
 
                 {/* GIF Box 3 */}
-                <div className="w-[450px]  hidden lg:flex  h-[250px] overflow-hidden rounded-lg ">
+                <div
+                  className="w-[450px] hidden lg:flex h-[250px] overflow-hidden rounded-lg cursor-pointer"
+                  onClick={() => openGifModal("fco")}
+                >
                   <img
                     src={fco}
                     alt="Gif 3"
@@ -246,18 +270,24 @@ const Homepage: React.FC = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="flex justify-center gap-8 p-8 mt-6  w-full ">
+              <div className="flex justify-center gap-8 p-8 mt-6 w-full">
                 {/* GIF Box 1 */}
-                <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg  ">
+                <div
+                  className="w-[450px] h-[250px] overflow-hidden rounded-lg cursor-pointer"
+                  onClick={() => openGifModal("afc")}
+                >
                   <img
-                    src={cvit}
+                    src={afc}
                     alt="Gif 1"
                     className="object-cover gif-box w-full h-full"
                   />
                 </div>
 
                 {/* GIF Box 2 */}
-                <div className="w-[450px]  hidden md:flex h-[250px] overflow-hidden rounded-lg ">
+                <div
+                  className="w-[450px] hidden md:flex h-[250px] overflow-hidden rounded-lg cursor-pointer"
+                  onClick={() => openGifModal("tuborg2")}
+                >
                   <img
                     src={tuborg2}
                     alt="Gif 2"
@@ -266,9 +296,12 @@ const Homepage: React.FC = () => {
                 </div>
 
                 {/* GIF Box 3 */}
-                <div className="w-[450px]  hidden lg:flex h-[250px] overflow-hidden rounded-lg ">
+                <div
+                  className="w-[450px] hidden lg:flex h-[250px] overflow-hidden rounded-lg cursor-pointer"
+                  onClick={() => openGifModal("cvit")}
+                >
                   <img
-                    src={afc}
+                    src={cvit}
                     alt="Gif 3"
                     className="object-cover gif-box w-full h-full"
                   />
@@ -276,9 +309,12 @@ const Homepage: React.FC = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="flex justify-center gap-8 p-8 mt-6 w-full  ">
+              <div className="flex justify-center gap-8 p-8 mt-6 w-full">
                 {/* GIF Box 1 */}
-                <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg  ">
+                <div
+                  className="w-[450px] h-[250px] overflow-hidden rounded-lg cursor-pointer"
+                  onClick={() => openGifModal("haohao")}
+                >
                   <img
                     src={haohao}
                     alt="Gif 1"
@@ -287,7 +323,10 @@ const Homepage: React.FC = () => {
                 </div>
 
                 {/* GIF Box 2 */}
-                <div className="w-[450px]  hidden md:flex h-[250px] overflow-hidden rounded-lg ">
+                <div
+                  className="w-[450px] hidden md:flex h-[250px] overflow-hidden rounded-lg cursor-pointer"
+                  onClick={() => openGifModal("mono")}
+                >
                   <img
                     src={mono}
                     alt="Gif 2"
@@ -296,7 +335,10 @@ const Homepage: React.FC = () => {
                 </div>
 
                 {/* GIF Box 3 */}
-                <div className="w-[450px]  hidden lg:flex h-[250px] overflow-hidden rounded-lg ">
+                <div
+                  className="w-[450px] hidden lg:flex h-[250px] overflow-hidden rounded-lg cursor-pointer"
+                  onClick={() => openGifModal("klook")}
+                >
                   <img
                     src={klook}
                     alt="Gif 3"
@@ -306,9 +348,12 @@ const Homepage: React.FC = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="flex justify-center gap-8 p-8 mt-6 w-full ">
+              <div className="flex justify-center gap-8 p-8 mt-6 w-full">
                 {/* GIF Box 1 */}
-                <div className="w-[450px]  hidden md:flex h-[250px] overflow-hidden rounded-lg  ">
+                <div
+                  className="w-[450px] h-[250px] overflow-hidden rounded-lg cursor-pointer"
+                  onClick={() => openGifModal("ngocdung")}
+                >
                   <img
                     src={ngocdung}
                     alt="Gif 1"
@@ -317,7 +362,10 @@ const Homepage: React.FC = () => {
                 </div>
 
                 {/* GIF Box 2 */}
-                <div className="w-[450px]  hidden lg:flex h-[250px] overflow-hidden rounded-lg ">
+                <div
+                  className="w-[450px] hidden md:flex h-[250px] overflow-hidden rounded-lg cursor-pointer"
+                  onClick={() => openGifModal("pho")}
+                >
                   <img
                     src={pho}
                     alt="Gif 2"
@@ -326,7 +374,10 @@ const Homepage: React.FC = () => {
                 </div>
 
                 {/* GIF Box 3 */}
-                <div className="w-[450px]  h-[250px] overflow-hidden rounded-lg ">
+                <div
+                  className="w-[450px] hidden lg:flex h-[250px] overflow-hidden rounded-lg cursor-pointer"
+                  onClick={() => openGifModal("xiaomi")}
+                >
                   <img
                     src={xiaomi}
                     alt="Gif 3"
@@ -336,6 +387,52 @@ const Homepage: React.FC = () => {
               </div>
             </SwiperSlide>
           </Swiper>
+
+          {/* Fullscreen Modal */}
+          {isGifModalOpen && (
+            <div
+              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90 z-50"
+              onClick={closeGifModal}
+            >
+              <div className="relative w-full h-full flex justify-center items-center">
+                <button
+                  className="absolute top-5 right-5 text-white text-3xl z-50"
+                  onClick={closeGifModal}
+                >
+                  ✕
+                </button>
+                <img
+                  src={
+                    activeGif === "ht2"
+                      ? ht2
+                      : activeGif === "grab"
+                      ? grab
+                      : activeGif === "fco"
+                      ? fco
+                      : activeGif === "afc"
+                      ? afc
+                      : activeGif === "cvit"
+                      ? cvit
+                      : activeGif === "tuborg2"
+                      ? tuborg2
+                      : activeGif === "haohao"
+                      ? haohao
+                      : activeGif === "mono"
+                      ? mono
+                      : activeGif === "klook"
+                      ? klook
+                      : activeGif === "ngocdung"
+                      ? ngocdung
+                      : activeGif === "pho"
+                      ? pho
+                      : xiaomi
+                  }
+                  alt="Fullscreen GIF"
+                  className="object-contain w-full h-full p-4"
+                />
+              </div>
+            </div>
+          )}
         </div>
       </div>
       <div className="flex justify-center   items-center space-x-12 lg:space-x-32 h-12 md:space-x-24 home-footer">
