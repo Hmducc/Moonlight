@@ -4,6 +4,7 @@ import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import fb from "../assets/facebook.svg";
+import fb2 from "../assets/facebook2.svg";
 import afc from "../assets/GIF/afc.gif";
 import cvit from "../assets/GIF/cvit.gif";
 import fco from "../assets/GIF/fco3.gif";
@@ -17,8 +18,11 @@ import pho from "../assets/GIF/pho2.gif";
 import tuborg2 from "../assets/GIF/tuborg2.gif";
 import xiaomi from "../assets/GIF/xiaomi.gif";
 import ig from "../assets/instagram.svg";
+import ig2 from "../assets/instagram2.svg";
+import phone2 from "../assets/phone2.png";
 import phone from "../assets/telephone.svg";
 import vimeo from "../assets/vimeo.svg";
+import vimeo2 from "../assets/vimeo2.svg";
 import About from "./About";
 import Brands from "./Brands";
 import Customers from "./Customers";
@@ -26,6 +30,7 @@ import "./Homepage.css";
 import Navbar from "./Navbar";
 import Services from "./Services";
 import Software from "./Software";
+
 const Homepage: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -68,88 +73,118 @@ const Homepage: React.FC = () => {
                       Contact us
                     </button>
 
-                    {/* Modal */}
                     {isModalOpen && (
-                      <div className="fixed inset-0 flex items-center  justify-center z-50 bg-black bg-opacity-50">
-                        <div className="bg-black md:w-[90%] w-[80%] lg:w-[50%] z-50 h-auto p-6 rounded-lg shadow-lg relative">
+                      <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-60">
+                        <div className="bg-gray-800 md:w-[80%] lg:w-[50%] p-8 rounded-xl shadow-xl relative">
+                          {/* Close Button */}
                           <button
-                            className="absolute top-2 right-2 text-white hover:text-gray-300"
+                            className="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl"
                             onClick={toggleModal}
                           >
                             ✕
                           </button>
-                          <div></div>
-                          <h2 className="text-2xl font-semibold  mb-4 manrope text-white text-center">
-                            MOONLIGHT STUDIO
-                          </h2>
-                          <div className="text-white text-left lg:h-10 justify-center  flex flex-col md:flex-row w-full">
-                            <div className=" flex items-center  mt-3 lg:mt-0 justify-start md:justify-center flex-1 flex-row flex-wrap">
-                              <a
-                                href="https://www.facebook.com/@moonlightstudiovfx"
-                                target="blank"
-                              >
-                                <img
-                                  src={fb}
-                                  className="w-5 h-5 filter invert "
-                                  alt="Facebook"
-                                />
-                              </a>
-                              <a
-                                href="https://www.facebook.com/@moonlightstudiovfx"
-                                className="ml-5"
-                                target="blank"
-                              >
-                                Moonlight Studio
-                              </a>
+
+                          {/* Header Section */}
+                          <div className="text-center mb-8">
+                            <h2 className="text-3xl font-bold text-white manrope tracking-widest">
+                              MOONLIGHT STUDIO
+                            </h2>
+                            <p className="text-gray-400 manrope mt-2">
+                              Creating animated videos with visual effects
+                            </p>
+                          </div>
+
+                          {/* Divider Line */}
+                          <div className="border-t border-gray-700 mb-8"></div>
+
+                          {/* Contact Info Grid */}
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
+                            {/* Facebook */}
+                            <div className="flex items-center text-left manrope  space-x-4 p-4 bg-gray-900 rounded-lg">
+                              <img
+                                src={fb2}
+                                className="w-8 h-8"
+                                alt="Facebook"
+                              />
+                              <div>
+                                <a
+                                  href="https://www.facebook.com/@moonlightstudiovfx"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-lg font-medium hover:underline"
+                                >
+                                  Moonlight Studio
+                                </a>
+                                <p className="text-sm text-gray-400">
+                                  Facebook
+                                </p>
+                              </div>
                             </div>
-                            <div className=" flex-1 flex items-center mt-5 lg:mt-0 justify-start md:justify-center  flex-row flex-wrap">
-                              <a
-                                href="https://www.instagram.com"
-                                target="blank"
-                              >
-                                <img
-                                  src={ig}
-                                  className="w-5 h-5 filter invert"
-                                  alt="Instagram"
-                                />
-                              </a>
-                              <a
-                                href="https://www.instagram.com"
-                                className="ml-5"
-                              >
-                                https://www.instagram.com
-                              </a>
+
+                            {/* Instagram */}
+                            <div className="flex items-center text-left manrope  space-x-4 p-4 bg-gray-900 rounded-lg">
+                              <img
+                                src={ig2}
+                                className="w-8 h-8"
+                                alt="Instagram"
+                              />
+                              <div>
+                                <a
+                                  href="https://www.instagram.com"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-lg font-medium hover:underline"
+                                >
+                                  @moonlightstudio
+                                </a>
+                                <p className="text-sm text-gray-400">
+                                  Instagram
+                                </p>
+                              </div>
+                            </div>
+
+                            {/* Vimeo */}
+                            <div className="flex items-center text-left manrope space-x-4 p-4 bg-gray-900 rounded-lg">
+                              <img
+                                src={vimeo2}
+                                className="w-8 h-8"
+                                alt="Vimeo"
+                              />
+                              <div>
+                                <a
+                                  href="https://vimeo.com/moonlightstudiovn"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-lg font-medium hover:underline"
+                                >
+                                  Moonlight Studio
+                                </a>
+                                <p className="text-sm text-gray-400">Vimeo</p>
+                              </div>
+                            </div>
+
+                            {/* Phone */}
+                            <div className="flex items-center text-left manrope  space-x-4 p-4 bg-gray-900 rounded-lg">
+                              <img
+                                src={phone2}
+                                className="w-8 h-8 filter invert"
+                                alt="Phone"
+                              />
+                              <div>
+                                <p className="text-lg font-medium">
+                                  0123456789
+                                </p>
+                                <p className="text-sm text-gray-400">Phone</p>
+                              </div>
                             </div>
                           </div>
-                          <div className=" text-left lg:h-10 justify-center  mt-5 lg:mt-0   flex flex-col md:flex-row w-full">
-                            <div className=" flex-1 flex  items-center justify-start md:justify-center  flex-row flex-wrap">
-                              <a
-                                href="https://vimeo.com/moonlightstudiovn"
-                                target="blank"
-                              >
-                                <img
-                                  src={vimeo}
-                                  className="w-5 h-5 filter invert"
-                                  alt="Vimeo"
-                                />
-                              </a>
-                              <a
-                                href="https://vimeo.com/moonlightstudiovn"
-                                className="ml-5"
-                                target="blank"
-                              >
-                                Moonlight Studio
-                              </a>
-                            </div>
-                            <div className="flex-1 flex items-center  mt-5 lg:mt-0 justify-start md:justify-center  flex-row flex-wrap">
-                              <a>
-                                <img
-                                  src={phone}
-                                  className="w-5 h-5 filter invert"
-                                />
-                              </a>
-                              <p className="ml-5">0123456789</p>
-                            </div>
+
+                          {/* Footer Section */}
+                          <div className="mt-8 text-center">
+                            <p className="text-gray-400 text-sm">
+                              © {new Date().getFullYear()} Moonlight Studio. All
+                              rights reserved.
+                            </p>
                           </div>
                         </div>
                       </div>
