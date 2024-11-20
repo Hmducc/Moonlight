@@ -32,6 +32,7 @@ import Customers from "./Customers";
 import "./Homepage.css";
 import Navbar from "./Navbar";
 import Services from "./Services";
+import { Container } from "react-bootstrap";
 
 const Homepage: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -62,6 +63,17 @@ const Homepage: React.FC = () => {
             <Navbar />
           </div>
         </div>
+        <Container className=" text-white w-screen h-screen">
+          <div className="w-full h-full">
+            <iframe
+              src="https://player.vimeo.com/video/852628482?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1"
+              title="Vimeo video"
+              allow="autoplay; fullscreen"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
+          </div>
+        </Container>
 
         <div className="  w-full md:w-full  mt-16   items-center md:h-1/2 lg:h-screen h-screen flex flex-col ">
           <div className="container w-full max-w-none  diamond-container  flex-grow relative  ">
