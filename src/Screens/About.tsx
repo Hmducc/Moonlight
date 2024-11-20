@@ -62,8 +62,8 @@ export default function About() {
                 </div>
                 <div className="text-white text-xl mt-5 manrope">
                   Moonlight Studio, founded 2018, is a post production studio
-                  focused on quality storytelling, striking visuals, and
-                  innovative design.{" "}
+                  HCMC based, focused on quality storytelling, striking visuals,
+                  and innovative design.{" "}
                 </div>
                 <div className="text-white text-xl mt-5 manrope">
                   We’re known for our dedicated work in TV commercials and

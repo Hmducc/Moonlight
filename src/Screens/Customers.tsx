@@ -11,7 +11,7 @@ export default function Customers() {
       className="home-item  lg:w-full  md:w-765 lg:h-[1020px]  "
     >
       <div className="home-item   lg:w-full md:w-[765px]">
-        <div className="flex mt-20 p-1 lg:p-0  text-5xl manrope text-white  lg:justify-end lg:mr-12">
+        <div className="flex mt-20 p-1 lg:p-0 text-5xl manrope text-white  justify-start lg:ml-12">
           Customers Priority
         </div>
         <div className="flex  justify-center mt-5  md:h-[380px] items-center  h-[700px] lg:h-[250px]">

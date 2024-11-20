@@ -32,7 +32,6 @@ import Customers from "./Customers";
 import "./Homepage.css";
 import Navbar from "./Navbar";
 import Services from "./Services";
-import Software from "./Software";
 
 const Homepage: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -64,11 +63,11 @@ const Homepage: React.FC = () => {
           </div>
         </div>
 
-        <div className="  w-[358px] md:w-full  mt-16   items-center md:h-1/2 lg:h-screen h-screen flex flex-col ">
-          <div className="container  diamond-container  flex-grow relative  ">
+        <div className="  w-full md:w-full  mt-16   items-center md:h-1/2 lg:h-screen h-screen flex flex-col ">
+          <div className="container w-full max-w-none  diamond-container  flex-grow relative  ">
             <div className="md:flex flex-col  md:flex-row  w-full md:h-3/4 lg:h-3/4 h-[1000px] ">
               <div className="flex-1 flex-wrap  h-[380px]  lg:h-full z-10 text-white lg:flex lg:justify-center lg:items-center ">
-                <div className=" md:ml-5  lg:ml-0 md:mt-20 lg:mt-10 md:w-[400px] md:h-[400px] lg:h-482 lg:w-482">
+                <div className="  md:ml-5 ipad-pro:ml-14  lg:ml-0 md:mt-20 lg:mt-10 md:w-[400px] md:h-[400px] lg:h-482 lg:w-482">
                   <p className="lg:text-70  ml-3 lg:ml-0 text-[50px] manrope  ">
                     Who are we?
                   </p>
@@ -78,11 +77,11 @@ const Homepage: React.FC = () => {
                 </div>
               </div>
               <div className="flex-1   md:h-[380px]  lg:h-full flex-wrap text-white z-10 lg:flex lg:justify-center lg:items-center">
-                <div className=" lg:mt-28 md:mt-28 lg:h-482flex flex-col justify-center items-center lg:items-end lg:w-482 lg:text-right">
-                  <p className="lg:text-5xl ml-3  lg:ml-0 text-[35px] ">
+                <div className=" lg:mt-28 md:mt-28 lg:h-482flex flex-col justify-center items-center lg:items-end lg:w-482 md:text-right  ">
+                  <p className="lg:text-5xl ml-3  lg:ml-0 text-[35px] w-[320px] ipad-pro:w-[400px] lg:w-full ">
                     Creating animated videos with visual effects
                   </p>
-                  <div className="flex justify-center items-center lg:justify-end">
+                  <div className="flex justify-center items-center lg:justify-end ">
                     <button
                       className="lg:w-96 w-80 lg:h-70 h-14 lg:mt-10 mt-5 manrope font-medium bg-white text-black contact-button"
                       onClick={toggleModal} // Open modal on button click
@@ -210,7 +209,7 @@ const Homepage: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="bottom-section ">
+            <div className="bottom-section  ">
               <Brands></Brands>
             </div>
           </div>
@@ -218,10 +217,13 @@ const Homepage: React.FC = () => {
         {/* ABOUT */}
         <About></About>
         <Services></Services>
-        <Software></Software>
+
         <Customers></Customers>
 
-        <div className="home-item  lg:w-full  md:w-765 lg:h-[550px]  ">
+        <div
+          id="Works"
+          className="home-item  lg:w-full  md:w-765 lg:h-[550px]  "
+        >
           <div className="flex lg:mt-20 mt-28 p-1 lg:p-0  text-5xl manrope text-white  lg:justify-start lg:mr-12">
             Some of our works
           </div>

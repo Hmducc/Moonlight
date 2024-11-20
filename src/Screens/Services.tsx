@@ -115,13 +115,25 @@ export default function Services() {
             className="object-cover gif-box w-full h-full"
           />
         </div>
-        <div className="lg:w-[450px] w-[350px] h-[320px]    lg:h-[400px] lg:mt-0 mt-12  overflow-hidden  details-box text-white p-3  ">
+        <div className="lg:w-[450px] w-[350px] h-[468px]    lg:h-[400px] lg:mt-0 mt-12  overflow-hidden  details-box text-white p-3  ">
           <div className="lg:text-2xl text-xl">05</div>
           <div className="lg:text-3xl text-2xl mt-2 mb-3">VFX</div>
           <div className="text-xl">
-            Elevate your visuals with our expert colour grading solutions. We
-            enhance the mood, consistency, and overall aesthetic of your
-            content, ensuring it stands out and captivates your audience.
+            <ul className="list-disc ml-5">
+              <p>Compositing and Layering:</p>
+              <li className="ml-8">
+                Combine various elements (CGI, live-action, matte paintings).
+              </li>
+              <li className="ml-8">
+                Adjust lighting, color, and depth to achieve seamless
+                integration.
+              </li>
+              <p>Visual Effects Creation:</p>
+              <li className="ml-8">
+                Generate particle effects, explosions or other visual
+                enhancements.
+              </li>
+            </ul>
           </div>
         </div>
       </div>

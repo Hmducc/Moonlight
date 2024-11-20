@@ -9,8 +9,8 @@ import logo from "../assets/moon_logo.png";
 const navigation = [
   { name: "About", to: "About" },
   { name: "Services", to: "Services" },
-  { name: "Software", to: "Software" },
   { name: "Customers", to: "Customers" },
+  { name: "Works", to: "Works" },
 ];
 
 export default function Example() {
