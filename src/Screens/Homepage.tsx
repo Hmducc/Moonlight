@@ -32,7 +32,6 @@ import Customers from "./Customers";
 import "./Homepage.css";
 import Navbar from "./Navbar";
 import Services from "./Services";
-import { Container } from "react-bootstrap";
 
 const Homepage: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -63,19 +62,22 @@ const Homepage: React.FC = () => {
             <Navbar />
           </div>
         </div>
-        <Container className=" text-white w-screen h-screen">
-          <div className="w-full h-full">
+        <div className="text-white w-screen h-screen m-0 p-0 overflow-hidden">
+          <div className="w-screen h-screen relative">
             <iframe
-              src="https://player.vimeo.com/video/852628482?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1"
+              src="https://player.vimeo.com/video/852628482?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0&quality=1080p&loop=1"
               title="Vimeo video"
               allow="autoplay; fullscreen"
               allowFullScreen
-              className="w-full h-full"
+              className="absolute top-1/2 left-1/2 w-[1920px] h-[1080px] transform -translate-x-1/2 -translate-y-1/2"
             ></iframe>
           </div>
-        </Container>
+        </div>
 
-        <div className="  w-full md:w-full  mt-16   items-center md:h-1/2 lg:h-screen h-screen flex flex-col ">
+        <div
+          id="About"
+          className="  w-full md:w-full  mt-5   items-center md:h-1/2 lg:h-screen h-screen flex flex-col "
+        >
           <div className="container w-full max-w-none  diamond-container  flex-grow relative  ">
             <div className="md:flex flex-col  md:flex-row  w-full md:h-3/4 lg:h-3/4 h-[1000px] ">
               <div className="flex-1 flex-wrap  h-[380px]  lg:h-full z-10 text-white lg:flex lg:justify-center lg:items-center ">
