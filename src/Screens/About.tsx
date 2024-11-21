@@ -1,9 +1,6 @@
 export default function About() {
   return (
-    <div
-      id="About"
-      className="   lg:w-full  md:w-[765px] h-[1350px] md:h-[750px]   lg:h-[670px]"
-    >
+    <div className="   lg:w-full  md:w-[765px] h-[1350px] md:h-[750px]   lg:h-[670px]">
       <div className="flex   justify-center mt-20 mb-20 lg:h-[500px] h-[1300px]  md:h-[630px]">
         {/* Container with Two Equal Columns */}
         <div className="flex flex-col md:flex-row w-full">
