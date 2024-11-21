@@ -69,7 +69,7 @@ const Homepage: React.FC = () => {
               title="Vimeo video"
               allow="autoplay; fullscreen"
               allowFullScreen
-              className="absolute top-1/2 left-1/2 w-[1920px] h-[1080px] transform -translate-x-1/2 -translate-y-1/2"
+              className="absolute top-1/2 left-1/2 w-screen h-[1080px] transform -translate-x-1/2 -translate-y-1/2"
             ></iframe>
           </div>
         </div>
